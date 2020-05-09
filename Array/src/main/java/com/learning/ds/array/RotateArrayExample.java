@@ -12,7 +12,7 @@ public class RotateArrayExample {
 
     private static void rotateArray(int arr[], int d) {
         int[] tmp1 = new int[d];
-        int [] newArray = new int[arr.length];
+        int[] newArray = new int[arr.length];
 
         int[] tmp2 = new int[arr.length - d];
         for (int i = 0; i < arr.length - d; i++) {
@@ -20,7 +20,7 @@ public class RotateArrayExample {
         }
 
         for (int i = 0; i < d; i++) {
-            newArray[arr.length-d+i] = arr[i];
+            newArray[arr.length - d + i] = arr[i];
         }
 
         for (int i : newArray)

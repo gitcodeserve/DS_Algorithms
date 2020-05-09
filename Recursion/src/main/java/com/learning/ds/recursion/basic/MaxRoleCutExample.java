@@ -19,23 +19,23 @@ public class MaxRoleCutExample {
         if (lengthOfRole == 0)
             return 0;
 
-        if(lengthOfRole == -1)
+        if (lengthOfRole == -1)
             return -1;
 
-        int res =  Math.max(Math.max(getMaximumRoleCuts(lengthOfRole-firstSize, firstSize, secondSize, thirdCut),
-                getMaximumRoleCuts(lengthOfRole-firstSize, firstSize, secondSize, thirdCut)),
-                getMaximumRoleCuts(lengthOfRole-firstSize, firstSize, secondSize, thirdCut));
+        int res = Math.max(Math.max(getMaximumRoleCuts(lengthOfRole - firstSize, firstSize, secondSize, thirdCut),
+                getMaximumRoleCuts(lengthOfRole - firstSize, firstSize, secondSize, thirdCut)),
+                getMaximumRoleCuts(lengthOfRole - firstSize, firstSize, secondSize, thirdCut));
 
         if (res == -1)
             return -1;
-        return res+1;
+        return res + 1;
     }
 
-    private static int maximum(int n1, int n2, int n3){
-        if(n1 > n2 && n1 > n3)
+    private static int maximum(int n1, int n2, int n3) {
+        if (n1 > n2 && n1 > n3)
             return n1;
 
-        else if(n2 > n1 && n2 > n3)
+        else if (n2 > n1 && n2 > n3)
             return n2;
 
         else

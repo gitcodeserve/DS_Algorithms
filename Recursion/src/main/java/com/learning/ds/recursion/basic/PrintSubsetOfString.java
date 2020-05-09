@@ -3,12 +3,11 @@ package com.learning.ds.recursion.basic;
 public class PrintSubsetOfString {
 
     // Driver code
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String str = "abc";
         int index = 0;
-        String curr="";
-        powerSet(str,index,curr);
+        String curr = "";
+        powerSet(str, index, curr);
 
     }
 
@@ -16,14 +15,11 @@ public class PrintSubsetOfString {
 // curr : Stores current subset
 // index : Index in current subset, curr
     static void powerSet(String str, int index,
-                         String curr)
-
-    {
+                         String curr) {
         int n = str.length();
 
         // base case
-        if (index == n)
-        {
+        if (index == n) {
             System.out.println(curr);
             return;
         }

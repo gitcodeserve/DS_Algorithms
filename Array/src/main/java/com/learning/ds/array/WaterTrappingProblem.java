@@ -11,14 +11,14 @@ package com.learning.ds.array;
  */
 public class WaterTrappingProblem {
 
-    static int arr [] = {3, 0, 2, 5};
+    static int arr[] = {3, 0, 2, 5};
+
     public static void main(String[] args) {
         System.out.println("Maximum water that can be accumulated is " + findWater(arr.length));
     }
 
     // Method for maximum amount of water
-    static int findWater(int n)
-    {
+    static int findWater(int n) {
         // left[i] contains height of tallest bar to the
         // left of i'th bar including itself
         int left[] = new int[n];

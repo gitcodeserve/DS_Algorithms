@@ -9,7 +9,7 @@ public class SumOfDigits {
     }
 
     private static int sumOfDigit(int number) {
-        if(number < 10)
+        if (number < 10)
             return number;
 
         return sumOfDigit(number / 10) + number % 10;
