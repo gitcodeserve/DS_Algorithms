@@ -13,6 +13,7 @@
     <modules>
         <module>Array</module>
         <module>Recursion</module>
+        <module>Bitwise</module>
     </modules>
 
     <properties>
